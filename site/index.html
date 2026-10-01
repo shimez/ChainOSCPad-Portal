@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="ひとつのChainOSCPadから、3つの使い方。OSCコントローラー、マクロキーボード、MIDIキーボードを選んで、Web Installer・設定・ドキュメントへ。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="ChainOSCPad Series — 同じパッドで、好きな使い方を。">
+  <meta property="og:description" content="12キーとロータリーエンコーダー。OSC・Keyboard・MIDIから用途に合うファームウェアを選べる、ChainOSCPadシリーズのポータル。">
+  <title>ChainOSCPad Series — OSC / Keyboard / MIDI</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="ChainOSCPad Series トップ">
+        <img src="assets/favicon.svg" width="30" height="30" alt="">
+        <span>ChainOSCPad <span class="brand-series">SERIES</span></span>
+      </a>
+      <nav aria-label="メインナビゲーション">
+        <a href="#choose">用途から選ぶ</a>
+        <a href="#compare">対応ボード</a>
+        <a href="#switch">切り替え方</a>
+        <a class="family-link" href="https://shimez.github.io/ChainOSC/">ChainOSCシリーズ <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> ONE HARDWARE / THREE PERSONALITIES</p>
+        <h1 id="hero-title">同じパッドで、<br>好きな使い方を。</h1>
+        <p class="hero-description">12個のキーと、ひとつのエンコーダー。<br>仮想空間の操作も、いつものショートカットも、音楽も。<br>ファームウェアを選んで、あなたのコントローラーに。</p>
+        <a class="button button-dark" href="#choose">用途に合うファームウェアを選ぶ <span aria-hidden="true">↓</span></a>
+        <p class="hero-footnote">XIAO ESP32S3 / C3 / C6 / C5 · 共通のChainOSCPadハードウェア</p>
+      </div>
+      <figure class="hero-visual">
+        <img src="assets/chainoscpad-device.jpg" width="2907" height="2750" alt="12個のキー、押し込み付きロータリーエンコーダー、XIAOを搭載したChainOSCPadの実機写真。">
+        <figcaption>ひとつのハードウェア。書き換えて、使い分ける。<br><span>ChainOSCPadプロトタイプ · 写真：<a href="https://shimez.github.io/ChainOSC/">ChainOSCポータル</a></span></figcaption>
+      </figure>
+    </section>
+
+    <div class="spec-strip">
+      <div class="container spec-inner">
+        <p><strong>12</strong> KEYS</p>
+        <span class="spec-divider" aria-hidden="true"></span>
+        <p><strong>1</strong> ROTARY ENCODER</p>
+        <span class="spec-divider" aria-hidden="true"></span>
+        <p><strong>4</strong> XIAO VARIANTS</p>
+        <span class="spec-note">配線はそのまま、役割を変える。</span>
+      </div>
+    </div>
+
+    <section class="section container" id="choose" aria-labelledby="choose-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / CHOOSE YOUR ROLE</p><h2 id="choose-title">何を操作しますか？</h2></div>
+        <p>使いたい機能から選ぶだけ。<br>各プロジェクトの公開ページへ進めます。</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card osc" aria-labelledby="osc-title">
+          <div class="card-top"><span class="protocol">Wi-Fi / OSC</span><span class="card-number" aria-hidden="true">01</span></div>
+          <div class="product-symbol" aria-hidden="true">/osc</div>
+          <p class="product-use">VRChat・OSC対応アプリを操作する</p>
+          <h3 id="osc-title">ChainOSCPad</h3>
+          <p class="product-description">キーとエンコーダーからOSCメッセージを直接送信。アドレスや値、シーケンスをブラウザーで設定できます。</p>
+          <ul class="feature-list">
+            <li>Wi-Fi経由でOSCを送信</li>
+            <li>Press / Release・Sequenceに対応</li>
+            <li>設定のJSONバックアップ・Preset対応</li>
+          </ul>
+          <div class="setting-note"><span>設定方法</span>デバイスのWi-Fi Web UI</div>
+          <div class="card-actions">
+            <a class="button product-button" href="https://shimez.github.io/ChainOSCPad/">製品ページへ <span aria-hidden="true">↗</span></a>
+            <a class="text-action" href="https://shimez.github.io/ChainOSCPad/installer/">Web Installer <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="card-links"><a href="https://github.com/shimez/ChainOSCPad">GitHub</a><a href="https://github.com/shimez/ChainOSCPad/blob/main/docs/USER_GUIDE_ja.md">ユーザーガイド</a></div>
+        </article>
+
+        <article class="product-card keyboard" aria-labelledby="keyboard-title">
+          <div class="card-top"><span class="protocol">USB / BLUETOOTH HID</span><span class="card-number" aria-hidden="true">02</span></div>
+          <div class="product-symbol symbol-key" aria-hidden="true">⌘ K</div>
+          <p class="product-use">ショートカット・音量操作に使う</p>
+          <h3 id="keyboard-title">ChainOSCPad <span>Keyboard</span></h3>
+          <p class="product-description">よく使うキーや修飾キーの組み合わせを手元に。エンコーダーで音量調整やメディア操作も行えます。</p>
+          <ul class="feature-list">
+            <li>初期割り当てはF13〜F24</li>
+            <li>回転で音量調整、押し込みでミュート</li>
+            <li>キー割り当てをブラウザーから保存</li>
+          </ul>
+          <div class="setting-note"><span>設定方法</span>USB接続のWebSerial Configurator</div>
+          <div class="card-actions">
+            <a class="button product-button" href="https://shimez.github.io/ChainOSCPad-Keyboard/">Web Installerへ <span aria-hidden="true">↗</span></a>
+            <a class="text-action" href="https://shimez.github.io/ChainOSCPad-Keyboard/configurator.html">Configuratorを開く <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="card-links"><a href="https://github.com/shimez/ChainOSCPad-Keyboard">GitHub</a><a href="https://github.com/shimez/ChainOSCPad-Keyboard/blob/main/README.md">使い方</a></div>
+        </article>
+
+        <article class="product-card midi" aria-labelledby="midi-title">
+          <div class="card-top"><span class="protocol">USB MIDI / BLE-MIDI</span><span class="card-number" aria-hidden="true">03</span></div>
+          <div class="product-symbol" aria-hidden="true">♫</div>
+          <p class="product-use">音源を演奏・MIDIでコントロールする</p>
+          <h3 id="midi-title">ChainOSCPad <span>MIDI</span></h3>
+          <p class="product-description">12キーを半音階の鍵盤に。MIDI対応の音源やDAWへノートとControl Changeを送信します。</p>
+          <ul class="feature-list">
+            <li>初期ノート60〜71・固定ベロシティ100</li>
+            <li>回転はCC1、押し込みはCC64</li>
+            <li>S3はUSB MIDIとBLE-MIDIを併用可能</li>
+          </ul>
+          <div class="setting-note"><span>設定方法</span>設定ヘッダーを編集して再ビルド</div>
+          <div class="card-actions">
+            <a class="button product-button" href="https://shimez.github.io/ChainOSCPad-MIDI/installer/">Web Installerへ <span aria-hidden="true">↗</span></a>
+            <a class="text-action" href="https://github.com/shimez/ChainOSCPad-MIDI/releases">リリースを見る <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="card-links"><a href="https://github.com/shimez/ChainOSCPad-MIDI">GitHub</a><a href="https://github.com/shimez/ChainOSCPad-MIDI/blob/main/README.md">使い方・接続方法</a></div>
+        </article>
+      </div>
+      <p class="section-note">それぞれ独立したファームウェアです。1台には、使いたい用途のファームウェアを書き込んで使用します。</p>
+    </section>
+
+    <section class="section compare-section" id="compare" aria-labelledby="compare-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">02 / CONNECTION GUIDE</p><h2 id="compare-title">あなたのXIAOでは、どうつなぐ？</h2></div>
+          <p>USBでの書き込みと、<br>操作データの送信方法は別です。</p>
+        </div>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="対応ボード比較表。画面が狭い場合は横にスクロールできます。">
+          <table>
+            <caption>操作データの送信方法</caption>
+            <thead><tr><th scope="col">XIAOボード</th><th scope="col"><span class="table-dot osc-dot" aria-hidden="true"></span>OSC</th><th scope="col"><span class="table-dot keyboard-dot" aria-hidden="true"></span>Keyboard</th><th scope="col"><span class="table-dot midi-dot" aria-hidden="true"></span>MIDI</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">ESP32S3</th><td>Wi-Fi</td><td>USB HID <em>または</em> BLE HID <sup>※1</sup></td><td>USB MIDI ＋ BLE-MIDI</td></tr>
+              <tr><th scope="row">ESP32C3</th><td>Wi-Fi</td><td>BLE HID</td><td>BLE-MIDI</td></tr>
+              <tr><th scope="row">ESP32C6</th><td>Wi-Fi</td><td>BLE HID</td><td>BLE-MIDI</td></tr>
+              <tr><th scope="row">ESP32C5</th><td>Wi-Fi</td><td>BLE HID</td><td>BLE-MIDI</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="compare-notes">
+          <p><strong>※1 KeyboardのS3版：</strong>USB版とBLE版は別ファームウェアです。Web Installerで接続方式を選択してください。</p>
+          <p><strong>C3 / C6 / C5のUSB：</strong>書き込み・設定・シリアル通信に使用します。USB HIDやUSB MIDIによる操作データの送信には対応しません。</p>
+          <p><strong>ブラウザーからの書き込み・設定：</strong>PC版Chrome / Edgeと、データ通信対応USBケーブルを使用してください。BLE版KeyboardもConfiguratorへの接続はUSBです。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="switch" aria-labelledby="switch-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">03 / SWITCH YOUR FIRMWARE</p><h2 id="switch-title">使い方を変えたくなったら。</h2></div>
+        <p>ハードウェアを組み替えず、<br>目的のファームウェアへ書き換えます。</p>
+      </div>
+      <ol class="steps">
+        <li><span class="step-number" aria-hidden="true">01</span><div><h3>今の設定をバックアップ</h3><p>OSCはWeb UI、KeyboardはConfiguratorから必要な設定を保存します。MIDIで設定ヘッダーを変更した場合は、変更したソースを保管してください。設定形式は各ファームウェアで異なります。</p></div></li>
+        <li><span class="step-number" aria-hidden="true">02</span><div><h3>Bluetoothの旧登録を削除</h3><p>BLE KeyboardとBLE-MIDIなど用途を切り替える場合は、接続先PC・スマートフォンのBluetooth設定から旧デバイスを削除します。同じ用途の通常更新では、毎回削除する必要はありません。</p></div></li>
+        <li><span class="step-number" aria-hidden="true">03</span><div><h3>Web Installerから書き込む</h3><p><a href="#choose">使いたいファームウェア</a>のWeb Installerを開き、搭載しているXIAOと、必要に応じて接続方式を選択します。既存ファームウェアは置き換わります。消去を選んだ場合は保存済み設定も失われます。</p></div></li>
+        <li><span class="step-number" aria-hidden="true">04</span><div><h3>接続し直して、動作を確認</h3><p>書き込み後はRESETし、Wi-Fi設定またはBluetoothの再ペアリングを行います。DAWなどで入力を選択し、キー・回転・押し込みの動作を確認してください。</p></div></li>
+      </ol>
+      <aside class="tip"><span class="tip-label">WINDOWS / EDGE</span><p>Bluetooth接続済みなのにWeb MIDIで入力が見つからない場合は、入力中の内容を保存してから、Edgeのアドレスバーで<code>edge://restart</code>を開いて再起動してください。ChainOSCPad MIDIで、この手順による認識改善を確認しています。</p></aside>
+    </section>
+
+    <section class="section hardware-section" id="hardware" aria-labelledby="hardware-title">
+      <div class="container hardware-grid">
+        <div>
+          <p class="eyebrow">04 / SHARED HARDWARE</p>
+          <h2 id="hardware-title">共通の配線。<br>共通の操作感。</h2>
+          <p>4行×3列のキーマトリクス、押し込み付きロータリーエンコーダー、ステータスLED。3つのファームウェアは同じChainOSCPadの基本配線を使用します。</p>
+          <a class="inline-link" href="https://github.com/shimez/ChainOSCPad#配線">配線の詳細をGitHubで確認 <span aria-hidden="true">↗</span></a>
+          <p class="small-text">同じXIAOの論理ピン名でも、S3 / C3 / C6 / C5でGPIO番号は異なります。組み立て時はボード別の配線表を確認してください。</p>
+        </div>
+        <div class="wiring-card">
+          <table>
+            <caption>共通ピン割り当て（XIAO論理ピン）</caption>
+            <thead><tr><th scope="col">ピン</th><th scope="col">接続先</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">D0–D3</th><td>ROW0–ROW3</td></tr>
+              <tr><th scope="row">D4–D6</th><td>COL0–COL2</td></tr>
+              <tr><th scope="row">D7 / D8</th><td>Encoder A / B</td></tr>
+              <tr><th scope="row">D9</th><td>Encoder Push</td></tr>
+              <tr><th scope="row">D10</th><td>Status LED</td></tr>
+            </tbody>
+          </table>
+          <p>キーのダイオード方向は<code>COL →| ROW</code>。帯側がROWです。エンコーダー共通端子とPushの反対側はGNDへ接続し、LEDには直列抵抗を使用します。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container faq-section" id="faq" aria-labelledby="faq-title">
+      <div><p class="eyebrow">BEFORE YOU START</p><h2 id="faq-title">よくある質問</h2></div>
+      <div class="faq-list">
+        <details><summary>OSC・Keyboard・MIDIを同時に使えますか？</summary><p>現在は用途別の独立したファームウェアです。1台に書き込んだファームウェアの機能を使用します。MIDIのS3版におけるUSB MIDIとBLE-MIDIの併用は、MIDIファームウェア内の機能です。</p></details>
+        <details><summary>BluetoothのペアリングだけでMIDIアプリに表示されますか？</summary><p>OSやアプリによって、BLE-MIDI対応ドライバーや専用の接続操作が必要です。KeyboardのBLE HIDとは認識方法が異なります。詳細は<a href="https://github.com/shimez/ChainOSCPad-MIDI#接続方法">MIDIの接続ガイド</a>を確認してください。</p></details>
+        <details><summary>Web Installerでシリアルポートが見つかりません。</summary><p>データ通信対応ケーブルとPC版Chrome / Edgeを使用し、Configuratorやシリアルモニターを閉じてください。必要に応じてXIAOのBOOTを押しながらUSBを接続し、BOOTを離してダウンロードモードにしてから書き込みます。完了後はRESETしてください。</p></details>
+        <details><summary>設定は別のファームウェアへ引き継げますか？</summary><p>OSCのアドレス設定、Keyboardのキー割り当て、MIDIのノート割り当ては別形式です。相互にそのまま読み込むことはできません。用途ごとにバックアップを保管し、対応するファームウェアで復元・再設定してください。</p></details>
+        <details><summary>このポータルとChainOSCシリーズの違いは？</summary><p>ChainOSCシリーズは、さまざまなハードウェアやWindowsアプリからOSCを送るプロジェクト群です。このポータルは<strong>ChainOSCPadのハードウェア</strong>を軸に、OSC・Keyboard・MIDIの使い方をまとめています。<a href="https://shimez.github.io/ChainOSC/">ChainOSCシリーズを見る</a></p></details>
+        <details><summary>最新バージョンや不具合の報告先は？</summary><p>各プロジェクトのGitHubと公開ページを確認してください。バージョンと更新タイミングはプロジェクトごとに異なります。不具合の報告時は、ファームウェア名、XIAOの種類、USB／Bluetoothなどの接続方式、OSと再現手順を添えると調査しやすくなります。</p></details>
+      </div>
+    </section>
+
+    <section class="related container" aria-labelledby="related-title">
+      <div><p class="eyebrow">EXPLORE THE FAMILY</p><h2 id="related-title">OSCの使い方を、もっと広げる。</h2><p>画面付きコントローラー、小型デバイス、Windowsのホットキー。<br>ほかのChainOSCシリーズも見てみませんか。</p></div>
+      <a class="button button-dark" href="https://shimez.github.io/ChainOSC/">ChainOSCシリーズへ <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div class="footer-top"><a class="brand" href="#">ChainOSCPad <span class="brand-series">SERIES</span></a><a href="#choose">3つのプロジェクトを見る <span aria-hidden="true">↑</span></a></div>
+    <p>ChainOSCPadシリーズは個人開発のプロジェクトです。ハードウェアメーカーなどによる公式製品ではありません。各ファームウェアの仕様・ライセンスは、それぞれのリポジトリを参照してください。</p>
+    <div class="footer-bottom"><span>© 2026 shimez and contributors · <a href="license.txt">MIT License</a></span><span>コンテンツ確認日：2026-10-01</span></div>
+  </footer>
+</body>
+</html>
